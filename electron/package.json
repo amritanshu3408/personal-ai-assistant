@@ -1,0 +1,25 @@
+{
+  "name": "personal-ai-assistant",
+  "version": "0.1.0",
+  "description": "Personal AI Assistant desktop shell",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.personal.aiassistant",
+    "productName": "Personal AI Assistant",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "../build/icon.ico"
+    }
+  }
+}
